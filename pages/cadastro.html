@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>Seja muito bem-vindo ao e-commerce de milhares de produtos tops.</h1>
+    <form>
+        <div class="logo">
+            <img src="../img/favicon-32x32.png" alt="E-commerce" title="E-commerce">
+            <h2> commerce</h2>
+        </div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome..." required>
+        <label for="surname">Sobrenome:</label>
+        <input type="text" id="surname" name="surname" placeholder="Seu sobrenome..." required>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Seu email..." required>
+        <label for="country">País:</label>
+        <select name="country" id="country" required>
+            <option value="br">Brasil</option>
+            <option value="us">Estados Unidos</option>
+            <option value="es">Espanha</option>
+        </select>
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" placeholder="Sua senha..." required>
+        <div class="terms">
+            <input type="checkbox" required id="terms-services" name="terms-services">
+            <label for="terms-services">Ao criar uma conta, você concorda com a <a href="">Política de Privacidade</a> e
+                com os
+                <a href="">Termos de Uso.</a></label>
+        </div>
+        <button type="submit">Criar conta</button>
+        <div id="singup">
+            <a href="../pages/cadastro.html">Ja tenho uma conta</a>
+        </div>
+    </form>
+</body>
+
+</html>

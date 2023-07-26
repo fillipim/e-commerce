@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-1: .75rem;
+    --border-radius-1: 4px;
+    --blue-1: #0073a4;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin: 30px 0 50px 0;
+    text-align: center;
+    width: 53%;
+    color: #666666;
+}
+
+h1 span {
+    color: #001dc1;
+}
+
+form {
+    margin: 0 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 8px;
+    border: solid 1px #cbcbcb;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+}
+
+input,
+select {
+    padding: var(--padding-1);
+    border: none;
+    border-radius: var(--border-radius-1);
+    background-color: #c0ecff;
+    margin: 10px 0 1rem 0;
+}
+
+input:focus,
+select:focus {
+    outline: solid 1px #0073a4;
+}
+
+button {
+    border: none;
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    background-color: #0073a4;
+    color: #e8e8e8;
+    cursor: pointer;
+}
+
+#forget-pass {
+    width: fit-content;
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--blue-1);
+}
+
+#singup {
+    padding-top: 1.5rem;
+    border-top: solid 1px var(--blue-1);
+    margin-top: 1rem;
+}
+
+#singup a {
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    background-color: #0073a4;
+    color: #e8e8e8;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.terms {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.terms input {
+    margin: 0;
+}
+
+.terms label {
+    font-size: 14px;
+}
