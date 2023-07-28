@@ -50,6 +50,20 @@ header {
     font-size: 1.5rem;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo img {
+    animation: spin .3s linear infinite;
+}
+
 .menu {
     display: flex;
 }
