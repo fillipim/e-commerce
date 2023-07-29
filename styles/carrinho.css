@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #17e4ff;
+    --brand-secondary: #15b2c6;
+    --dark-blue: #1c3145;
+    --gray-prymary: #ebebeb;
+    --gray-secondary: #c8c8c8;
+    --gray-tertiary: #e2e2e2;
+    --green-primary: #009b43;
+    --padding-1: 0 3rem;
+    --padding-2: 1rem;
+    --margin-1: 1rem;
+    --border-radius-1: 8px;
+    --border-radius-2: 4px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+}
+
+main {
+    width: 30%;
+    margin: auto;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: var(--gray-prymary);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--gray-prymary);
+    background-color: var(--dark-blue);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+li img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+ul {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar {
+    height: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #1c3145;
+    border-radius: 20px;
+}
+
+.total {
+    padding: 1rem;
+    border-top: solid 1px var(--dark-blue);
+}
+
+.total div {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+button {
+    width: 100%;
+    padding: .75rem;
+    background-color: var(--green-primary);
+    color: var(--gray-prymary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
