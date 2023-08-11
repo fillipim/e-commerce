@@ -5,41 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
 </head>
 
 <body>
     <h1>Seja muito bem-vindo ao e-commerce de milhares de produtos tops.</h1>
-    <form>
+    <form id="form" name="cadastro">
         <div class="logo">
             <img src="../img/favicon-32x32.png" alt="E-commerce" title="E-commerce">
             <h2> commerce</h2>
         </div>
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Seu nome..." required>
+        <input type="text" id="name" name="name" placeholder="Seu nome...">
+        <small class="error-message">Campo obrigatório!</small>
         <label for="surname">Sobrenome:</label>
-        <input type="text" id="surname" name="surname" placeholder="Seu sobrenome..." required>
+        <input type="text" id="surname" name="surname" placeholder="Seu sobrenome...">
+        <small class="error-message">Campo obrigatório!</small>
         <label for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="Seu email..." required>
-        <label for="country">País:</label>
-        <select name="country" id="country" required>
-            <option value="br">Brasil</option>
-            <option value="us">Estados Unidos</option>
-            <option value="es">Espanha</option>
-        </select>
+        <input type="text" name="email" id="email" placeholder="Seu email...">
+        <small class="error-message">Campo obrigatório!</small>
         <label for="password">Senha:</label>
-        <input type="password" name="password" id="password" placeholder="Sua senha..." required>
-        <div class="terms">
-            <input type="checkbox" required id="terms-services" name="terms-services">
-            <label for="terms-services">Ao criar uma conta, você concorda com a <a href="">Política de Privacidade</a> e
-                com os
-                <a href="">Termos de Uso.</a></label>
-        </div>
-        <button type="submit">Criar conta</button>
+        <input type="password" name="password" id="password" placeholder="Sua senha...">
+        <small class="error-message">Campo obrigatório!</small>
+
+        <select id="teste">
+            <option value="opt1">Opt1</option>
+            <option value="opt2">Opt2</option>
+            <option value="opt3">Opt3</option>
+        </select>
+
+        <button id="btn" type="submit">Criar conta</button>
         <div id="singup">
             <a href="../pages/cadastro.html">Ja tenho uma conta</a>
         </div>
     </form>
+    <script src="../js/cadastro.js"></script>
 </body>
 
 </html>

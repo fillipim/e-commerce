@@ -118,6 +118,15 @@ button {
     font-size: 14px;
 }
 
+.error-message {
+    color: red;
+    display: none;
+}
+
+.error-message-active {
+    display: inline;
+}
+
 @media (max-width: 768px) {
 
     form,
